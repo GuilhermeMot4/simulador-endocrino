@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ratinhos Virtuais</title>
+</head>
+<body>
+    <header>
+        <h1>Simulador Endócrino: Ratinhos Virtuais</h1>
+    </header>
+    <main>
+        <section class="sessao1">
+            <img class="capa" src="imagens/capa2.png">
+            <div class="hormonio-selecao">
+                <form class="hormonio-form">
+                    <h2 class="hormonio-titulo">Selecione o hormônio:</h2>
+                    <div class="hormonio-item">
+                        <input type="radio" id="acth" name="hormonio" value="acth" checked>
+                        <label for="acth">ACTH</label>
+                    </div>
+                    <div class="hormonio-item">
+                        <input type="radio" id="cortisol" name="hormonio" value="cortisol">
+                        <label for="cortisol">Cortisol</label>
+                    </div>
+                    <div class="hormonio-item">
+                        <input type="radio" id="lh" name="hormonio" value="lh">
+                        <label for="lh">LH</label>
+                    </div>
+                    <div class="hormonio-item">
+                        <input type="radio" id="testosterona" name="hormonio" value="testosterona">
+                        <label for="testosterona">Testosterona</label>
+                    </div>
+                    <div class="hormonio-item">
+                        <input type="radio" id="trh" name="hormonio" value="trh">
+                        <label for="trh">TRH</label>
+                    </div>
+                    <div class="hormonio-item">
+                        <input type="radio" id="tsh" name="hormonio" value="tsh">
+                        <label for="tsh">TSH</label>
+                    </div>           
+                </form>
+            </div>
+        </section>
+        <section class="sessao2">
+            <iframe src="https://www.youtube.com/embed/srSUbXVNlRQ?si=f5hHdxsTqVKQwTju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="sessao2-texto">
+                <h2>Texto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis convallis finibus. Sed fermentum tempor justo. Donec mauris urna, eleifend nec lorem vel, egestas malesuada libero. Cras libero tortor, fringilla pharetra turpis ultrices, cursus laoreet metus. Nunc ornare eros id augue accumsan lacinia. In hac habitasse platea dictumst. Morbi cursus neque eu turpis sollicitudin, nec pretium nibh suscipit. Vivamus porttitor nunc sem, vitae tempus leo pulvinar non. Quisque suscipit urna sapien, id pharetra nisi tincidunt eu. Nullam blandit posuere iaculis. Morbi maximus magna ultrices orci finibus euismod. Mauris facilisis aliquam facilisis. Morbi sed turpis vitae eros convallis pulvinar. Aliquam ac tristique ex. Quisque ultrices condimentum leo, vel tristique nunc commodo non. In imperdiet odio libero.</p>
+                <p>Mauris quis ligula eget sem aliquam pretium. Proin vel nisi eu ipsum feugiat hendrerit. Nulla sit amet metus consequat, gravida risus id, sagittis neque. Etiam turpis elit, accumsan quis metus consequat, ultricies pellentesque leo. Cras at nunc lacinia, ultricies odio a, pulvinar sem. Cras rhoncus mi id quam laoreet feugiat. Nam molestie ligula quis quam blandit volutpat vitae ut risus. Maecenas ornare augue viverra, ornare mauris eu, scelerisque ante. Mauris vel ipsum aliquam, ullamcorper sapien sed, ultricies erat. Sed auctor ipsum felis, sit amet tincidunt eros ornare quis. Aliquam vehicula velit at fermentum ultrices. Etiam est nisi, lacinia ut nunc cursus, tempus condimentum tortor. Vestibulum sed nibh tincidunt, vehicula ante ut, laoreet sapien.</p>
+            </div>
+        </section>
+        <section class="sessao3">
+            <h2>Tente você mesmo:</h2>
+            <label for="dose">Dose de Hormônio:</label>
+            <input class="barra" type="range" id="dose" min="0" max="100" value="50">
+            <span id="dose-value">50</span>
+            <!--<div class="orgao" id="orgao1">Hipófise</div>
+            <div class="orgao" id="orgao2">Tireóide</div>
+            <div class="orgao" id="orgao3">Timo</div>
+            <div class="orgao" id="orgao4">Adrenais</div>
+            <div class="orgao" id="orgao5">Vesículas seminais</div>
+            <div class="orgao" id="orgao6">Próstata</div>
+            <div class="orgao" id="orgao7">Testículos</div>
+            <div class="orgao" id="orgao8">Peso corporal</div>-->
+            <label for="orgao1">Hipófise:</label>
+            <input class="barra" type="range" id="orgao1" min="0" max="100" value="50" disabled>
+            <span id="orgao1-value">50</span>
+
+            <label for="orgao2">Tireóide:</label>
+            <input class="barra" type="range" id="orgao2" min="0" max="100" value="50" disabled>
+            <span id="orgao2-value">50</span>
+
+            <label for="orgao3">Timo:</label>
+            <input class="barra" type="range" id="orgao3" min="0" max="100" value="50" disabled>
+            <span id="orgao3-value">50</span>
+
+            <label for="orgao4">Adrenais:</label>
+            <input class="barra" type="range" id="orgao4" min="0" max="100" value="50" disabled>
+            <span id="orgao4-value">50</span>
+
+            <label for="orgao5">Vesículas seminais:</label>
+            <input class="barra" type="range" id="orgao5" min="0" max="100" value="50" disabled>
+            <span id="orgao5-value">50</span>
+
+            <label for="orgao6">Próstata:</label>
+            <input class="barra" type="range" id="orgao6" min="0" max="100" value="50" disabled>
+            <span id="orgao6-value">50</span>
+
+            <label for="orgao7">Testículos:</label>
+            <input class="barra" type="range" id="orgao7" min="0" max="100" value="50" disabled>
+            <span id="orgao7-value">50</span>
+
+            <label for="orgao8">Peso corporal:</label>
+            <input class="barra" type="range" id="orgao8" min="0" max="100" value="50" disabled>
+            <span id="orgao8-value">50</span>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Guilherme Mota e Maria Clara Salik.</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

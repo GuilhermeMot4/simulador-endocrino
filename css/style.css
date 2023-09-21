@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    background-color: #040D12;
+    padding: 2% 8%;
+    text-align: center;
+    color: #93B1A6;
+}
+
+.sessao1{
+    background-color: #183D3D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+}
+
+img{
+    width: 50%;
+}
+
+.hormonio-selecao{
+    /*width: 560px;*/
+    width: 50%;
+}
+
+.hormonio-form {
+    margin-top: 10px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 3px solid #040D12;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.hormonio-titulo {
+    color: #93B1A6;
+    font-size: 32px;
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    color: #93B1A6;
+}
+
+.sessao2{
+    background-color: #93B1A6;
+    color: #183D3D;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.sessao2-texto{
+    width: 50%;
+}
+
+.sessao2 h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sessao2 p{
+    font-size: 18px;
+}
+
+iframe{
+    border: 3px solid #040D12;
+    border-radius: 8px;
+    width: 50%;
+    height: 450px;
+}
+
+.sessao3{
+    background-color: #183D3D;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sessao3 h2{
+    color: #93B1A6;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.barra {
+    height: 30px;
+    -webkit-appearance: none; /* Remova a aparência padrão do WebKit */
+    appearance: none; /* Remova a aparência padrão */
+    background: #ccc; /* Cor de fundo do track (barra) */
+    outline: none; /* Remova a borda de foco padrão */
+    border-radius: 8px;
+}
+
+.barra::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remova a aparência padrão do polegar no WebKit */
+    appearance: none; /* Remova a aparência padrão do polegar */
+    width: 20px; /* Largura do polegar (cursor) */
+    height: 40px; /* Altura do polegar (cursor) */
+    background: #93B1A6; /* Cor de fundo do polegar (cursor) */
+    cursor: pointer; /* Altere o cursor ao passar o mouse sobre o polegar (cursor) */
+    border-radius: 8px;
+}
+
+span{
+    color: #93B1A6;
+    font-size: 20px;
+}
+
+/*.orgao{
+    height: 60px;
+    background-color: #93B1A6;
+    color: #183D3D;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}*/
+
+footer{
+    background-color: #040D12;
+    padding: 2% 8%;
+    text-align: center;
+    color: #93B1A6;
+}
+
+@media (max-width: 1200px) {
+
+    .sessao1{
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    .hormonio-selecao{
+        width: 100%;
+    }
+
+    .sessao2{
+        display: flex;
+        flex-direction: column;
+        padding: 8%;
+    }
+
+    .sessao2-texto{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .sessao3{
+        padding: 8%;
+    }
+
+    footer{
+        padding: 8%;    
+    }
+    
+}
+
