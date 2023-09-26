@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const radiobuttons = document.querySelectorAll('input[name="hormonio"]');
     const conteudoHormonio = document.getElementById('conteudo-hormonio');
     const tituloHormonio = document.getElementById('titulo-hormonio');
+    const hormonioLabel = document.getElementById('hormonio-label');
 
     // Obtenha uma referência ao elemento iframe
     const videoIframe = document.getElementById('video-iframe');
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Atualize a src do iframe com a nova URL
         videoIframe.src = videoURL;
+        hormonioLabel.textContent = tituloHormonio.textContent;
     }
 
 });
