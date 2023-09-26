@@ -23,8 +23,7 @@ function calcularNovosValores(dose, taxas) {
     document.getElementById("dose-value").textContent = dose;
 
     const regrasHormonios = {
-      acth: { hipofise: -0.3, tireoide: 0.0, timo: 0.3, adrenais: 0.3, vesiculasSemin: 0.0, prostata: 0.0, testiculos: 0.0, pesoCorp: -0.3 },
-      cortisol: { hipofise: 0.01, tireoide: 0.0, timo: -0.01, adrenais: 0.02, vesiculasSemin: 0.0, prostata: 0.0, testiculos: 0.0, pesoCorp: -0.02 }
+      acth: { hipofise: -0.3, tireoide: 0.0, timo: -0.3, adrenais: 0.3, vesiculasSemin: 0.0, prostata: 0.0, testiculos: 0.0, pesoCorp: -0.3 }
     };
   
     const hormonioSelecionado = document.querySelector('input[name="hormonio"]:checked').value;

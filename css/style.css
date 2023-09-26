@@ -16,6 +16,7 @@ header{
     padding: 2% 8%;
     text-align: center;
     color: #93B1A6;
+    font-size: 24px;
 }
 
 .sessao1{
@@ -31,7 +32,6 @@ img{
 }
 
 .hormonio-selecao{
-    /*width: 560px;*/
     width: 50%;
 }
 
@@ -53,7 +53,7 @@ img{
 }
 
 label {
-    font-size: 18px;
+    font-size: 20px;
     color: #93B1A6;
 }
 
@@ -78,7 +78,10 @@ label {
 }
 
 .sessao2 p{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 30px;
 }
 
 iframe{
@@ -104,6 +107,25 @@ iframe{
     margin-bottom: 10px;
 }
 
+.orgao-barras{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.orgao-barra{
+    width: 50%;
+    justify-content: center;
+}
+
+.orgao{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .barra {
     height: 30px;
     -webkit-appearance: none; /* Remova a aparência padrão do WebKit */
@@ -127,17 +149,6 @@ span{
     color: #93B1A6;
     font-size: 20px;
 }
-
-/*.orgao{
-    height: 60px;
-    background-color: #93B1A6;
-    color: #183D3D;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}*/
 
 footer{
     background-color: #040D12;
@@ -178,6 +189,15 @@ footer{
 
     .sessao3{
         padding: 8%;
+    }
+
+    .orgao-barras{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .orgao-barra{
+        width: 100%;
     }
 
     footer{
