@@ -63,7 +63,7 @@ label {
     padding: 2%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     gap: 50px;
 }
 
