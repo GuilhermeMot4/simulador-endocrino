@@ -2,7 +2,11 @@
 function calcularNovosValores(dose, taxas) {
     const novosValores = {};
     for (let orgao in taxas) {
-      novosValores[orgao] = 50 + (taxas[orgao] * dose);
+      if(taxas[orgao] === '+'){
+        novosValores[orgao] = 50 + parseInt(dose / 2 );
+      }else if(taxas[orgao] === '-'){
+        novosValores[orgao] = 50 - parseInt(dose / 2 );
+      }
     }
     return novosValores;
   }
@@ -11,7 +15,7 @@ function calcularNovosValores(dose, taxas) {
   function atualizarExibicaoValores(novosValores) {
     for (let orgao in novosValores) {
       const elemento = document.getElementById(orgao);
-      const valor = novosValores[orgao].toFixed(2); // Formata o valor com duas casas decimais
+      const valor = novosValores[orgao]; // Formata o valor com duas casas decimais
       elemento.value = valor;
       document.getElementById(`${orgao}-value`).textContent = valor;
     }
@@ -19,16 +23,23 @@ function calcularNovosValores(dose, taxas) {
   
   // Exemplo de uso da função com as regras de taxas para cada hormônio
   document.getElementById('dose').addEventListener('input', function() {
-    const dose = parseFloat(this.value);
+    const dose = parseInt(this.value);
     document.getElementById("dose-value").textContent = dose;
 
     const regrasHormonios = {
-      acth: { hipofise: -0.3, tireoide: 0.0, timo: -0.3, adrenais: 0.3, vesiculasSemin: 0.0, prostata: 0.0, testiculos: 0.0, pesoCorp: -0.3 }
+      acth: { hipofise: '-', tireoide: '', timo: '-', adrenais: '+', vesiculasSemin: '', prostata: '', testiculos: '', pesoCorp: '-' },
+      cortisol: { hipofise: '-', tireoide: '', timo: '-', adrenais: '-', vesiculasSemin: '', prostata: '', testiculos: '', pesoCorp: '-' },
+      lh: { hipofise: '-', tireoide: '', timo: '', adrenais: '', vesiculasSemin: '+', prostata: '+', testiculos: '+', pesoCorp: '+' },
+      testosterona: { hipofise: '-', tireoide: '', timo: '', adrenais: '', vesiculasSemin: '+', prostata: '+', testiculos: '-', pesoCorp: '+' },
+      trh: { hipofise: '+', tireoide: '+', timo: '', adrenais: '', vesiculasSemin: '', prostata: '', testiculos: '', pesoCorp: '-' },
+      tsh: { hipofise: '-', tireoide: '+', timo: '', adrenais: '', vesiculasSemin: '', prostata: '', testiculos: '', pesoCorp: '-' }
     };
   
     const hormonioSelecionado = document.querySelector('input[name="hormonio"]:checked').value;
+    console.log(hormonioSelecionado)
   
     const novosValores = calcularNovosValores(dose, regrasHormonios[hormonioSelecionado]);
+    console.log(novosValores);
   
     atualizarExibicaoValores(novosValores);
   });

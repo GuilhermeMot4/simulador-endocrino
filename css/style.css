@@ -19,6 +19,36 @@ header{
     font-size: 24px;
 }
 
+.sessao0{
+    background-color: #93B1A6;
+    color: #183D3D;
+    padding: 2%;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 50px; */
+}
+
+.sessao0 h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.swiper{
+    width: 80%;
+}
+
+.swiper img{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination{
+    display: none;
+    position: initial;
+}
+
 .sessao1{
     background-color: #183D3D;
     display: flex;
@@ -41,7 +71,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border: 3px solid #040D12;
+    border: 3px solid #93B1A6;
     border-radius: 8px;
     padding: 20px;
 }
@@ -52,7 +82,29 @@ img{
     text-align: center;
 }
 
-label {
+.hormonio-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.hormonio-item input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 3px solid #93B1A6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hormonio-item input[type="radio"]:checked {
+    background: #93B1A6; 
+}
+
+.hormonio-item label {
+    cursor: pointer;
     font-size: 20px;
     color: #93B1A6;
 }
@@ -80,15 +132,14 @@ label {
 .sessao2 p{
     font-size: 20px;
     text-align: justify;
-    text-indent: 20px;
-    line-height: 30px;
+    line-height: 1.6;
 }
 
-iframe{
+video{
     border: 3px solid #040D12;
     border-radius: 8px;
     width: 50%;
-    height: 450px;
+    height: auto;
 }
 
 .sessao3{
@@ -98,6 +149,18 @@ iframe{
     flex-direction: column;
     gap: 15px;
     justify-content: center;
+}
+
+.sessao3 label,span {
+    font-size: 20px;
+    color: #93B1A6;
+}
+
+.sessao3 .dose-info{
+    display: flex;
+    justify-content: space-between;
+    color: #93B1A6;
+    font-size: 20px;
 }
 
 .sessao3 h2{
@@ -145,11 +208,6 @@ iframe{
     border-radius: 8px;
 }
 
-span{
-    color: #93B1A6;
-    font-size: 20px;
-}
-
 footer{
     background-color: #040D12;
     padding: 2% 8%;
@@ -158,6 +216,18 @@ footer{
 }
 
 @media (max-width: 1200px) {
+
+    .swiper{
+        width: 100%;
+    }
+
+    .swiper-pagination{
+        display: block;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
 
     .sessao1{
         display: flex;
@@ -183,7 +253,7 @@ footer{
         width: 100%;
     }
 
-    iframe{
+    video{
         width: 100%;
     }
 
@@ -205,4 +275,3 @@ footer{
     }
     
 }
-
