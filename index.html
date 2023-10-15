@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <title>Ratinhos Virtuais</title>
+    <title>Simulador Endócrino</title>
 </head>
 <body>
     <header>
         <h1>Simulador Endócrino: Ratinhos Virtuais</h1>
     </header>
     <main>
-        <section class="sessao0">
-            <h2>Experimento:</h2>
+        <section class="sessao1">
+            <h2>Como funciona o experimento?</h2>
+            <video id="video-experimento" class="video1" controls autoplay loop muted>
+                <source type="video/mp4" src="videos\video-experimento.mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+        <section class="carrossel">
+            <h2>Hormônios:</h2>
             <div class="swiper">
 
                 <div class="swiper-wrapper">
@@ -24,6 +31,7 @@
                     <div class="swiper-slide"><img src="imagens/5.png" alt="Slide 5"></div>
                     <div class="swiper-slide"><img src="imagens/6.png" alt="Slide 6"></div>
                     <div class="swiper-slide"><img src="imagens/7.png" alt="Slide 7"></div>
+                    <div class="swiper-slide"><img src="imagens/8.png" alt="Slide 8"></div>
                 </div>
             
                 <div class="swiper-pagination"></div>
@@ -37,7 +45,7 @@
             <img class="capa" src="imagens/capa.png">
             <div class="hormonio-selecao">
                 <form class="hormonio-form">
-                    <h2 class="hormonio-titulo">Selecione o hormônio:</h2>
+                    <h2>Selecione o hormônio:</h2>
                     <div class="hormonio-item">
                         <input type="radio" id="acth" name="hormonio" value="acth" checked>
                         <label for="acth">ACTH</label>
@@ -66,8 +74,7 @@
             </div>
         </section>
         <section class="sessao2">
-            <!-- <iframe id="video-iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-            <video id="video-hormonio" controls>
+            <video id="video-hormonio" class="video2" controls autoplay loop muted>
                 <source id="video-src" src="" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
             </video>

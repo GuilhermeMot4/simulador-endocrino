@@ -19,20 +19,22 @@ header{
     font-size: 18px;
 }
 
-.sessao0{
+.carrossel{
     background-color: #93B1A6;
-    color: #183D3D;
+    color: #2b7070;
     padding: 2%;
 }
 
-.sessao0 h2{
+.carrossel h2{
     font-size: 32px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .swiper{
-    width: 80%;
+    width: 60%;
+    border: 3px solid #2b7070;
+    border-radius: 8px;
 }
 
 .swiper img{
@@ -46,11 +48,17 @@ header{
 }
 
 .sessao1{
-    background-color: #183D3D;
+    background-color: #2b7070;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2%;
+}
+
+.sessao1 h2 {
+    color: #93B1A6;
+    font-size: 32px;
+    text-align: center;
 }
 
 img{
@@ -70,12 +78,6 @@ img{
     border: 3px solid #93B1A6;
     border-radius: 8px;
     padding: 20px;
-}
-
-.hormonio-titulo {
-    color: #93B1A6;
-    font-size: 32px;
-    text-align: center;
 }
 
 .hormonio-item {
@@ -107,7 +109,7 @@ img{
 
 .sessao2{
     background-color: #93B1A6;
-    color: #183D3D;
+    color: #2b7070;
     padding: 2%;
     display: flex;
     justify-content: space-evenly;
@@ -132,14 +134,21 @@ img{
 }
 
 video{
-    border: 3px solid #040D12;
     border-radius: 8px;
     width: 50%;
     height: auto;
 }
 
+.video1{
+    border: 3px solid #93B1A6;
+}
+
+.video2{
+    border: 3px solid #2b7070;
+}
+
 .sessao3{
-    background-color: #183D3D;
+    background-color: #2b7070;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -213,7 +222,7 @@ footer{
 
 @media (max-width: 1200px) {
 
-    .sessao0{
+    .carrossel{
         padding: 8%;
     }
 
@@ -233,6 +242,10 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 8%;
+    }
+
+    .sessao1 h2 {
+        margin-bottom: 15px;
     }
 
     img{
