@@ -3,6 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const DOSE_INICIAL = 0;
     const ORGAO_INICIAL = 50;
 
+    const HIPOFISE_INICIAL = 12.9;
+    const TIREOIDE_INICIAL = 250;
+    const TIMO_INICIAL = 475;
+    const ADRENAIS_INICIAL = 40;
+    const VESICULASSEMIN_INICIAL = 500;
+    const PROSTATA_INICIAL = 425;
+    const TESTICULOS_INICIAL = 3200;
+    const PESOCORP_INICIAL = 300;
+
+
+
     // Selecione todos os radiobuttons pelo nome do grupo (neste caso, "hormonio")
     const radiobuttons = document.querySelectorAll('input[name="hormonio"]');
 
@@ -99,21 +110,21 @@ document.addEventListener('DOMContentLoaded', function () {
         doseValue.textContent = DOSE_INICIAL + "%";
 
         hipofiseInput.value = ORGAO_INICIAL;
-        hipofiseValue.textContent = ORGAO_INICIAL;
+        hipofiseValue.textContent = HIPOFISE_INICIAL.toFixed(2) + " mg" + " (Controle)";
         tireoideInput.value = ORGAO_INICIAL;
-        tireoideValue.textContent = ORGAO_INICIAL;
+        tireoideValue.textContent = TIREOIDE_INICIAL.toFixed(2) + " mg" + " (Controle)";
         timoInput.value = ORGAO_INICIAL;
-        timoValue.textContent = ORGAO_INICIAL;
+        timoValue.textContent = TIMO_INICIAL.toFixed(2) + " mg" + " (Controle)";
         adrenaisInput.value = ORGAO_INICIAL;
-        adrenaisValue.textContent = ORGAO_INICIAL;
+        adrenaisValue.textContent = ADRENAIS_INICIAL.toFixed(2) + " mg" + " (Controle)";
         vesiculasSeminInput.value = ORGAO_INICIAL;
-        vesiculasSeminValue.textContent = ORGAO_INICIAL;
+        vesiculasSeminValue.textContent = VESICULASSEMIN_INICIAL.toFixed(2) + " mg" + " (Controle)";
         prostataInput.value = ORGAO_INICIAL;
-        prostataValue.textContent = ORGAO_INICIAL;
+        prostataValue.textContent = PROSTATA_INICIAL.toFixed(2) + " mg" + " (Controle)";
         testiculosInput.value = ORGAO_INICIAL;
-        testiculosValue.textContent = ORGAO_INICIAL;
+        testiculosValue.textContent = TESTICULOS_INICIAL.toFixed(2) + " mg" + " (Controle)";
         pesoCorpInput.value = ORGAO_INICIAL;
-        pesoCorpValue.textContent = ORGAO_INICIAL;
+        pesoCorpValue.textContent = PESOCORP_INICIAL.toFixed(2) + " g" + " (Controle)";
     }
 
 });
