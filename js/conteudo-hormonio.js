@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function resetaHormonio(){
         hormonioLabel.textContent = tituloHormonio.textContent;
         doseInput.value = DOSE_INICIAL;
-        doseValue.textContent = DOSE_INICIAL;
+        doseValue.textContent = DOSE_INICIAL + "%";
 
         hipofiseInput.value = ORGAO_INICIAL;
         hipofiseValue.textContent = ORGAO_INICIAL;

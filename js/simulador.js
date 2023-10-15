@@ -24,7 +24,7 @@ function calcularNovosValores(dose, taxas) {
   // Exemplo de uso da função com as regras de taxas para cada hormônio
   document.getElementById('dose').addEventListener('input', function() {
     const dose = parseInt(this.value);
-    document.getElementById("dose-value").textContent = dose;
+    document.getElementById("dose-value").textContent = dose + "%";
 
     const regrasHormonios = {
       acth: { hipofise: '-', tireoide: '', timo: '-', adrenais: '+', vesiculasSemin: '', prostata: '', testiculos: '', pesoCorp: '-' },
@@ -36,10 +36,8 @@ function calcularNovosValores(dose, taxas) {
     };
   
     const hormonioSelecionado = document.querySelector('input[name="hormonio"]:checked').value;
-    console.log(hormonioSelecionado)
   
     const novosValores = calcularNovosValores(dose, regrasHormonios[hormonioSelecionado]);
-    console.log(novosValores);
   
     atualizarExibicaoValores(novosValores);
   });

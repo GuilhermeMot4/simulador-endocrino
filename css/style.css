@@ -16,17 +16,13 @@ header{
     padding: 2% 8%;
     text-align: center;
     color: #93B1A6;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .sessao0{
     background-color: #93B1A6;
     color: #183D3D;
     padding: 2%;
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-    gap: 50px; */
 }
 
 .sessao0 h2{
@@ -216,6 +212,10 @@ footer{
 }
 
 @media (max-width: 1200px) {
+
+    .sessao0{
+        padding: 8%;
+    }
 
     .swiper{
         width: 100%;
