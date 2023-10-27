@@ -113,7 +113,7 @@ header{
     padding: 2%;
     display: flex;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: center;
     gap: 50px;
 }
 
@@ -124,6 +124,11 @@ header{
 
 .sessao2-texto{
     width: 50%;
+}
+
+.destaque{
+    font-weight: bold;
+    color: #2b7070;
 }
 
 .sessao2 h2{
