@@ -67,19 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
         switch (valorHormonio) {
             case 'acth':
                 videoHormonioURL = 'videos/video-acth.mp4';
-                videoConclusaoURL = 'videos/hipotireoidismo_hipertireoidismo.mp4';
+                videoConclusaoURL = 'videos/Síndrome de Cuching.mp4';
                 conteudoConclusao1.textContent = "O ACTH, Hormônio Adrenocorticotrófico, é uma substância essencial no complexo sistema endócrino do corpo. Produzido na glândula pituitária anterior, ele desempenha um papel crucial na regulação da produção de cortisol pelas glândulas suprarrenais. O cortisol é conhecido como o hormônio do estresse e desempenha diversas funções no organismo, incluindo a regulação do sistema imunológico e a resposta ao estresse.";
                 conteudoConclusao2.textContent = "O ACTH apresenta um ritmo de secreção circadiano, com valores mais elevados no início da manhã e mais baixos à tarde, sendo responsável pelo ritmo de secreção característico do cortisol. Quando os níveis de ACTH estão desregulados, como na doença de Cushing, ocorre um excesso de produção de cortisol. Isso resulta em sintomas como ganho de peso, hipertensão arterial, fragilidade óssea e pele fina. A doença de Cushing é apenas um exemplo dos muitos distúrbios hormonais que podem afetar a produção e os níveis de ACTH no organismo.";
                 break;
             case 'cortisol':
                 videoHormonioURL = 'videos/video-cortisol.mp4';
-                videoConclusaoURL = 'videos/hipotireoidismo_hipertireoidismo.mp4';
+                videoConclusaoURL = 'videos/Síndrome de Cuching.mp4';
                 conteudoConclusao1.textContent = "O cortisol, frequentemente chamado de hormônio do estresse, é uma substância poderosa e necessária para o funcionamento do corpo. Quando enfrentamos situações de estresse, o corpo libera cortisol, preparando-o para a ação. No entanto, altos níveis crônicos de cortisol devido ao estresse prolongado podem resultar em problemas de saúde. ";
                 conteudoConclusao2.textContent = "Esses problemas incluem aumento do risco de doenças cardiovasculares, distúrbios do sono, ganho de peso, pressão arterial elevada, diminuição da imunidade e distúrbios metabólicos.";
                 break;
             case 'lh':
                 videoHormonioURL = 'videos/video-lh.mp4';
-                videoConclusaoURL = 'videos/anabolizantes.mp4';
+                videoConclusaoURL = 'videos/LH x saúde reprodutiva.mp4';
                 conteudoConclusao1.textContent = "O LH, ou Hormônio Luteinizante, desempenha um papel crucial na regulação dos ciclos menstruais em mulheres e na produção de testosterona em homens. Nas mulheres, o aumento dos níveis de LH desencadeia a ovulação, permitindo a liberação de um óvulo maduro dos ovários. Nos homens, o LH estimula as células de Leydig nos testículos a produzirem testosterona.";
                 conteudoConclusao2.textContent = "Desequilíbrios nos níveis de LH podem resultar em problemas de fertilidade em ambos os sexos. Em mulheres, a ausência de um pico de LH pode indicar anovulação, enquanto em homens, a deficiência de LH pode afetar a produção de testosterona.";
                 break;
