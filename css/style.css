@@ -92,13 +92,13 @@ header{
     appearance: none;
     width: 22px;
     height: 22px;
-    border: 3px solid #93B1A6;
+    border: 3px solid rgb(4, 42, 63);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .hormonio-item input[type="radio"]:checked {
-    background: #93B1A6; 
+    background: rgb(4, 42, 63); 
 }
 
 .hormonio-item label {
@@ -168,18 +168,18 @@ video{
 
 .sessao3 label,span {
     font-size: 20px;
-    color: #93B1A6;
+    color: #090a0a;
 }
 
 .sessao3 .dose-info{
     display: flex;
     justify-content: space-between;
-    color: #93B1A6;
+    color: rgb(4, 42, 63);
     font-size: 20px;
 }
 
 .sessao3 h2{
-    color: #93B1A6;
+    color: rgb(4, 42, 63);
     font-size: 32px;
     text-align: center;
     margin-bottom: 10px;
@@ -228,13 +228,6 @@ footer{
     padding: 2% 8%;
     text-align: center;
     color: #93B1A6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer a{
-    margin-left: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -307,12 +300,6 @@ footer a{
 
     footer{
         padding: 8%;    
-        flex-direction: column;
-    }
-
-    footer a{
-        margin-left: 0px;
-        margin-top: 12px;
     }
     
 }
