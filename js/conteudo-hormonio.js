@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
             case 'cortisol':
                 videoHormonioURL = 'videos/video-cortisol.mp4';
-                videoConclusaoURL = 'videos/Síndrome de Cuching.mp4';
+                videoConclusaoURL = 'videos/Síndrome de Cushing.mp4';
                 conteudoConclusao1.textContent = "O cortisol, frequentemente chamado de hormônio do estresse, é uma substância poderosa e necessária para o funcionamento do corpo. Quando enfrentamos situações de estresse, o corpo libera cortisol, preparando-o para a ação. No entanto, altos níveis crônicos de cortisol devido ao estresse prolongado podem resultar em problemas de saúde. ";
                 conteudoConclusao2.textContent = "Esses problemas incluem aumento do risco de doenças cardiovasculares, distúrbios do sono, ganho de peso, pressão arterial elevada, diminuição da imunidade e distúrbios metabólicos.";
                 break;
