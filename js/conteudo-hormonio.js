@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
         switch (valorHormonio) {
             case 'acth':
                 videoHormonioURL = 'videos/video-acth.mp4';
-                videoConclusaoURL = 'videos/Síndrome de Cuching.mp4';
+                videoConclusaoURL = 'videos/Síndrome de Cushing.mp4';
                 conteudoConclusao1.textContent = "O ACTH, Hormônio Adrenocorticotrófico, é uma substância essencial no complexo sistema endócrino do corpo. Produzido na glândula pituitária anterior, ele desempenha um papel crucial na regulação da produção de cortisol pelas glândulas suprarrenais. O cortisol é conhecido como o hormônio do estresse e desempenha diversas funções no organismo, incluindo a regulação do sistema imunológico e a resposta ao estresse.";
                 conteudoConclusao2.textContent = "O ACTH apresenta um ritmo de secreção circadiano, com valores mais elevados no início da manhã e mais baixos à tarde, sendo responsável pelo ritmo de secreção característico do cortisol. Quando os níveis de ACTH estão desregulados, como na doença de Cushing, ocorre um excesso de produção de cortisol. Isso resulta em sintomas como ganho de peso, hipertensão arterial, fragilidade óssea e pele fina. A doença de Cushing é apenas um exemplo dos muitos distúrbios hormonais que podem afetar a produção e os níveis de ACTH no organismo.";
                 break;
